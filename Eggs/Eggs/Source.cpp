@@ -21,7 +21,7 @@ int main()
 	eggCost = lonelyEggs * .25;
 	totalAmount = cartonCost + eggCost;
 
-	cout << "__________________________________________" << endl;
+	cout << "____________________________________" << endl;
 
 	cout << "Cartons of eggs: " << dozenEgg << endl;
 	cout << "Eggs remaining: " << lonelyEggs << endl;
