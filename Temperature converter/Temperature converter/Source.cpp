@@ -1,9 +1,7 @@
 #include <iostream>
-
 using namespace std;
 
 double convert(double f)
-
 {
 	
 	double c;
@@ -13,34 +11,19 @@ double convert(double f)
 }
 
 int main()
-
 {
 
-	int fEightam;
-	int fTwelvepm;
-	int fFivepm;
 	double c;
-
-	cout << "Temperature in Fahrenheit at 8:00 AM: ";
-	cin >> fEightam;
-	cout << "Temperature in Fahrenheit at 12:00 PM: ";
-	cin >> fTwelvepm;
-	cout << "Temperature in Fahrenheit at 5:00 PM: ";
-	cin >> fFivepm;
-
-	//actual (F to C) conversion rate is - 32 * 5 / 9 (- 32 / by 1.8 works too)
+	double tempArray[5] = { 0.0 };
 	
-	cout << "___________________________________________" << endl;
+	for (int i = 0; i < size(tempArray); i++) {
 
-	c = convert(fEightam);
-	cout << "Temperature in Celsius at 8:00 AM: " << c << endl;
-	c = convert(fTwelvepm);
-	cout << "Temeprature in Celsius at 12:00 PM: " << c << endl;
-	c = convert(fFivepm);
-	cout << "Temperature in Celsius at 5:00 PM: " <<c << endl;
-
+		cout << "Enter a temperature: ";
+		cin >> tempArray[i];
+		c = convert(tempArray[i]);
+		cout << "The temperature is: " << c << endl;
+	}
 
 	system("pause");
 	return 0;
-
 }
